@@ -1,0 +1,33 @@
+const heading = document.createElement("h1");
+heading.innerHTML = "jamal jamaloo";
+
+const root = document.getElementById("root");
+root.appendChild(heading);
+
+basically browser can understand the functions such as createElement , innerHTML, getElementById, appendChild etc as they are built in it but understand react and render into html we need to include react in it.
+Out of two methods one is CDN which are content delivery networks (homework) just include cdn links in the html code
+
+what is cross origin in cdn link 2nd homework - be curious about every damn thing u come across know and dive deep into them.
+
+open the console in the browser and enter react and react dom to see the react functions explore them.....
+
+also the 2 cdn links first is for the whole react core thing as react is used for other thing like react native for mobile and react 3d the common react thing is one link and for the browser react dom is the other link it acts as a bridge.
+
+hello world with react
+
+const heading = React.createElement("h1", {}, "hello , world though react!!");
+- there are attributes
+1. element name 
+2. to give attributes of the elment like id or class
+3. inner html part
+React.createElement is an object which has things like props which are children and attributes 3rd one is the children and the 2nd one is the attribute.
+
+- this is creating elements which is generic to react so createElement comes inside react where as createRoot the next function is specific to dom tree of browser so it is available inside ReactDOM.
+const root = ReacteDOM.createRoot(document.getElementById("root"));
+root.render(heading);
+
+the most costly operation in web page is manipulating the dom tree adding and deleting new nodes so every framework or library try to optimizes this and try to make evrything possible in js.
+
+the render is resposible to convert the createElement js object into html element and puts it in the dom.
+
+to create some
